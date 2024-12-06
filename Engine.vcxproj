@@ -19,10 +19,14 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="ApplicationClass.cpp" />
+    <ClCompile Include="InputClass.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="SystemClass.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="ApplicationClass.h" />
+    <ClInclude Include="InputClass.h" />
     <ClInclude Include="SystemClass.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">

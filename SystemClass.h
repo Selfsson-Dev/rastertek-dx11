@@ -1,10 +1,9 @@
 #pragma once
 #define WIN32_LEAN_AND_MEAN
 #include <windows.h>
-/*
 #include "InputClass.h"
 #include "ApplicationClass.h"
-*/
+
 
 class SystemClass
 {
@@ -26,13 +25,12 @@ private:
 	void shutdownWindows();
 
 	LPCWSTR m_applicationName;
-	HINSTANCE m_instance;
-	HWND m_hwmd;
+	HINSTANCE m_hinstance;
+	HWND m_hwnd;
 
-	/*
+	
 	InputClass* m_input;
 	ApplicationClass* m_application;
-	*/
 };
 
 // redirectiong windows messaging into MessageHandler (whatever that means)
