@@ -1,23 +1,24 @@
 #pragma once
-#include <windows.h>
+#include "D3DClass.h"
 
-const bool FULL_SCREEN = false;
-const bool VSYNC_ENABLED = true;
-const float SCREEN_DEPTH = 1000.0f;
-const float SCREEN_NEAR = 0.3f;
+constexpr bool FULL_SCREEN   = false;
+constexpr bool VSYNC_ENABLED = true;
+constexpr float SCREEN_DEPTH = 1000.0f;
+constexpr float SCREEN_NEAR  = 0.3f;
 
 class ApplicationClass
 {
 public:
-	ApplicationClass();
-	ApplicationClass(const ApplicationClass&);
-	~ApplicationClass();
+    ApplicationClass();
+    ApplicationClass(const ApplicationClass&);
+    ~ApplicationClass();
 
-	bool initialize(int, int, HWND);
-	void shutdown();
-	bool frame();
+    bool initialize(int, int, HWND);
+    void shutdown();
+    bool frame();
 
 private:
-	bool render();
-};
+    bool render();
 
+    D3DClass* m_Direct3D;
+};

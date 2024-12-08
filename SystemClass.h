@@ -8,29 +8,29 @@
 class SystemClass
 {
 public:
-	SystemClass();
-	SystemClass(const SystemClass&);
-	~SystemClass();
+    SystemClass();
+    SystemClass(const SystemClass&);
+    ~SystemClass();
 
-	bool initialize();
-	void shutdown();
-	void run();
+    bool initialize();
+    void shutdown();
+    void run();
 
-	// windows shenanigans
-	LRESULT CALLBACK MessageHandler(HWND, UINT, WPARAM, LPARAM);
+    // windows shenanigans
+    LRESULT CALLBACK MessageHandler(HWND, UINT, WPARAM, LPARAM);
 
 private:
-	bool frame();
-	void initializeWindows(int&, int&);
-	void shutdownWindows();
+    bool frame();
+    void initializeWindows(int&, int&);
+    void shutdownWindows();
 
-	LPCWSTR m_applicationName;
-	HINSTANCE m_hinstance;
-	HWND m_hwnd;
+    LPCWSTR m_applicationName;
+    HINSTANCE m_hinstance;
+    HWND m_hwnd;
 
-	
-	InputClass* m_input;
-	ApplicationClass* m_application;
+
+    InputClass* m_input;
+    ApplicationClass* m_application;
 };
 
 // redirectiong windows messaging into MessageHandler (whatever that means)

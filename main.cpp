@@ -1,20 +1,20 @@
 #include "SystemClass.h"
 
 int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, PSTR pScmdline, int iCmdshow) {
-	SystemClass* System;
-	bool result;
+    SystemClass* System;
+    bool result;
 
-	System = new SystemClass;
+    System = new SystemClass;
 
-	result = System->initialize();
+    result = System->initialize();
 
-	if (result) {
-		System->run();
-	}
+    if (result) {
+        System->run();
+    }
 
-	System->shutdown();
-	delete System;
-	System = 0;
-	
-	return 0;
+    System->shutdown();
+    delete System;
+    System = 0;
+
+    return 0;
 }

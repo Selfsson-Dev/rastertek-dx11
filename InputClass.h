@@ -2,18 +2,17 @@
 class InputClass
 {
 public:
-	InputClass();
-	InputClass(const InputClass&);
-	~InputClass();
+    InputClass();
+    InputClass(const InputClass&);
+    ~InputClass();
 
-	void initialize();
+    void initialize();
 
-	void key_down(unsigned int);
-	void key_up(unsigned int);
+    void key_down(unsigned int);
+    void key_up(unsigned int);
 
-	bool is_key_down(unsigned int);
+    bool is_key_down(unsigned int);
 
 private:
-	bool m_keys[256];
+    bool m_keys[256];
 };
-
