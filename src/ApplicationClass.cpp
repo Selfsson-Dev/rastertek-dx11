@@ -1,4 +1,4 @@
-#include "../include/ApplicationClass.h"
+#include "ApplicationClass.h"
 
 ApplicationClass::ApplicationClass() {
     m_Direct3D = 0;

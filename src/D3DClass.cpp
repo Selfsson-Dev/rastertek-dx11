@@ -1,4 +1,4 @@
-﻿#include "../include/D3DClass.h"
+﻿#include "D3DClass.h"
 
 D3DClass::D3DClass() {
     m_swapChain          = 0;

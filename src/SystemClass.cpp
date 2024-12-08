@@ -1,4 +1,4 @@
-#include "../include/SystemClass.h"
+#include "SystemClass.h"
 
 SystemClass::SystemClass() {
     m_application = 0;
